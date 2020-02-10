@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import '../css/App.css';
+import {LuxComponent} from './LuxComponent';
+
 // import components
 
 class App extends Component {
 
   render() {
     return (
-      <div className="app">
-        Trivia!
-        
-      </div>
+      <div>
+     <LuxComponent questionText= 'how many states are there' answers = {['50','52', '48', '49']}> 
+     </LuxComponent> 
+     </div>
     );
   }
 }
